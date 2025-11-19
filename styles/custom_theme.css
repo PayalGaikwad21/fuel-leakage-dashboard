@@ -68,13 +68,17 @@ body, p, span, div, label, small {
     border: none !important;
 }
 
-/* Remove hover effect completely */
-.stButton button:hover {
+/* ===== REMOVE ALL HOVER/FOCUS EFFECTS ===== */
+.stButton button:hover,
+.stButton button:focus,
+.stButton button:active,
+.stButton button:visited {
     background-color: #1b4de4 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
     transform: none !important;
     opacity: 1 !important;
 }
-
 
 
 
