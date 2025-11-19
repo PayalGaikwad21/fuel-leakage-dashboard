@@ -14,13 +14,25 @@ html, body, [data-testid="stAppViewContainer"], .main {
 }
 
 /* ===== HEADINGS ===== */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif !important;
     color: #1a2b49 !important;
     font-weight: 700 !important;
 }
 
-/* ===== TABLE (CARD) WRAPPER ===== */
+/* ===== GLOBAL TEXT COLOR ===== */
+body, p, span, div, label, small {
+    color: #0a1a3a !important;   /* dark navy for readability */
+}
+
+/* ===== METRICS (fix white text) ===== */
+[data-testid="stMetricValue"],
+[data-testid="stMetricLabel"] {
+    color: #0a1a3a !important;
+    font-weight: 700 !important;
+}
+
+/* ===== TABLE (CARD WRAPPER) ===== */
 [data-testid="stDataFrame"] {
     background-color: white !important;
     border-radius: 12px !important;
@@ -30,19 +42,27 @@ h1, h2, h3, h4 {
 
 /* ===== TABLE HEADER ===== */
 [data-testid="stDataFrame"] table thead tr th {
-    background-color: #d9ecff !important;   /* slightly darker blue */
-    color: #1a2b49 !important;
+    background-color: #d9ecff !important;   /* Light sky blue header */
+    color: #0a1a3a !important;              /* Dark navy text */
+    font-weight: 700 !important;
 }
 
 /* ===== TABLE BODY CELLS ===== */
 [data-testid="stDataFrame"] table tbody tr td {
-    background-color: #f6fbff !important;   /* super light blue */
+    background-color: #f6fbff !important;   /* Very light blue */
+    color: #0a1a3a !important;              /* readable dark text */
 }
 
 /* ===== BUTTONS ===== */
 .stButton button {
-    background-color: #1b4de4 !important;
+    background-color: #1b4de4 !important;   /* bright blue */
     color: #ffffff !important;
     border-radius: 10px !important;
     border: none !important;
+    padding: 10px 18px !important;
+    font-weight: 600 !important;
+}
+
+.stButton button:hover {
+    background-color: #153bb5 !important;   /* darker blue hover */
 }
