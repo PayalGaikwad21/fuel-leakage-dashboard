@@ -3,15 +3,16 @@ html, body, [data-testid="stAppViewContainer"], .main {
     background-color: #0a1a3a !important;   /* deep navy */
 }
 
-/* ===== SIDEBAR (LIGHT BLUE) ===== */
+/* ===== SIDEBAR (Matching Navy Variant) ===== */
 [data-testid="stSidebar"] {
-    background-color: #b5d9ff !important;   /* soft light blue */
+    background-color: #15294b !important;   /* slightly lighter navy */
 }
 
 [data-testid="stSidebar"] * {
-    color: #0a1a3a !important;              /* dark navy text for sidebar */
+    color: #ffffff !important;
     font-family: "Poppins", sans-serif !important;
 }
+
 
 /* ===== HEADINGS (white for navy background) ===== */
 h1, h2, h3, h4, h5, h6 {
@@ -66,3 +67,4 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1 !important;
     transform: none !important;
 }
+
