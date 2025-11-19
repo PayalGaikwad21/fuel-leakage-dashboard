@@ -60,6 +60,21 @@ body, p, span, div, label, small {
     border-radius: 10px !important;
     border: none !important;
 }
+/* ===== BUTTONS ===== */
+.stButton button {
+    background-color: #1b4de4 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+/* Remove hover effect completely */
+.stButton button:hover {
+    background-color: #1b4de4 !important;
+    transform: none !important;
+    opacity: 1 !important;
+}
+
 
 
 
