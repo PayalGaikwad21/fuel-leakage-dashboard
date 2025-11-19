@@ -44,10 +44,17 @@ h1, h2, h3, h4 {
     background-color: #f6fbff !important;
 }
 
-/* ===== BUTTONS ===== */
-.stButton button {
-    background-color: #1b4de4 !important;
+/* ===== REMOVE ALL HOVER EFFECTS ===== */
+.stButton button:hover,
+.stButton button:focus,
+.stButton button:active,
+.stButton button:visited {
+    background-color: #1b4de4 !important;   /* same as normal */
     color: #ffffff !important;
-    border-radius: 10px !important;
-    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
 }
+
+
