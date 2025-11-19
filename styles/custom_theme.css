@@ -3,8 +3,6 @@ html, body, [data-testid="stAppViewContainer"], .main {
     background-color: #e3f2ff !important;
 }
 
-
-
 /* ===== SIDEBAR ===== */
 [data-testid="stSidebar"] {
     background-color: #0f2b55 !important;
@@ -15,6 +13,11 @@ html, body, [data-testid="stAppViewContainer"], .main {
     font-family: "Poppins", sans-serif !important;
 }
 
+/* ===== GLOBAL TEXT COLOR (Fixed — no dropdown issues) ===== */
+[data-testid="stAppViewContainer"] *:not(input):not(textarea):not(select):not(option) {
+    color: #0a1a3a !important;
+}
+
 /* ===== HEADINGS ===== */
 h1, h2, h3, h4 {
     font-family: "Poppins", sans-serif !important;
@@ -22,7 +25,7 @@ h1, h2, h3, h4 {
     font-weight: 700 !important;
 }
 
-/* ===== TABLE (CARD) WRAPPER ===== */
+/* ===== TABLE (CARD WRAPPER) ===== */
 [data-testid="stDataFrame"] {
     background-color: white !important;
     border-radius: 12px !important;
@@ -32,13 +35,13 @@ h1, h2, h3, h4 {
 
 /* ===== TABLE HEADER ===== */
 [data-testid="stDataFrame"] table thead tr th {
-    background-color: #d9ecff !important;   /* slightly darker blue */
+    background-color: #d9ecff !important;
     color: #1a2b49 !important;
 }
 
 /* ===== TABLE BODY CELLS ===== */
 [data-testid="stDataFrame"] table tbody tr td {
-    background-color: #f6fbff !important;   /* super light blue */
+    background-color: #f6fbff !important;
 }
 
 /* ===== BUTTONS ===== */
@@ -48,5 +51,3 @@ h1, h2, h3, h4 {
     border-radius: 10px !important;
     border: none !important;
 }
-
-
