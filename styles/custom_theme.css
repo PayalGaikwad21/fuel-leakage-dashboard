@@ -2,10 +2,7 @@
 html, body, [data-testid="stAppViewContainer"], .main {
     background-color: #e3f2ff !important;
 }
-/* ===== GLOBAL TEXT COLOR ===== */
-body, p, span, div, label, .css-1dp5vir, .css-183lzff, .css-10trblm {
-    color: #0a1a3a !important;   /* deep navy */
-}
+
 
 
 /* ===== SIDEBAR ===== */
@@ -51,4 +48,5 @@ h1, h2, h3, h4 {
     border-radius: 10px !important;
     border: none !important;
 }
+
 
