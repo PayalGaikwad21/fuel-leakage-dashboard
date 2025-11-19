@@ -1,60 +1,68 @@
-/* ===== MAIN BACKGROUND (Soft Blue) ===== */
+/* ===== MAIN BACKGROUND (NAVY BLUE) ===== */
 html, body, [data-testid="stAppViewContainer"], .main {
-    background-color: #e3f2ff !important;
+    background-color: #0a1a3a !important;   /* deep navy */
 }
 
-/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR (LIGHT BLUE) ===== */
 [data-testid="stSidebar"] {
-    background-color: #0f2b55 !important;
+    background-color: #b5d9ff !important;   /* soft light blue */
 }
 
 [data-testid="stSidebar"] * {
+    color: #0a1a3a !important;              /* dark navy text for sidebar */
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* ===== HEADINGS (white for navy background) ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif !important;
     color: #ffffff !important;
-    font-family: "Poppins", sans-serif !important;
-}
-
-/* ===== GLOBAL TEXT COLOR (Fixed — no dropdown issues) ===== */
-[data-testid="stAppViewContainer"] *:not(input):not(textarea):not(select):not(option) {
-    color: #0a1a3a !important;
-}
-
-/* ===== HEADINGS ===== */
-h1, h2, h3, h4 {
-    font-family: "Poppins", sans-serif !important;
-    color: #1a2b49 !important;
     font-weight: 700 !important;
 }
 
-/* ===== TABLE (CARD WRAPPER) ===== */
+/* ===== GLOBAL TEXT (white on navy background) ===== */
+[data-testid="stAppViewContainer"] *:not(input):not(textarea):not(select):not(option) {
+    color: #ffffff !important;
+}
+
+/* ===== TABLE WRAPPER ===== */
 [data-testid="stDataFrame"] {
-    background-color: white !important;
+    background-color: #1a2b49 !important;     /* darker card */
     border-radius: 12px !important;
     padding: 10px !important;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.09) !important;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2) !important;
 }
 
-/* ===== TABLE HEADER ===== */
+/* ===== TABLE HEADER (blue tones + white text) ===== */
 [data-testid="stDataFrame"] table thead tr th {
-    background-color: #d9ecff !important;
-    color: #1a2b49 !important;
+    background-color: #2f4c7a !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
 }
 
-/* ===== TABLE BODY CELLS ===== */
+/* ===== TABLE BODY CELLS (dark + white text) ===== */
 [data-testid="stDataFrame"] table tbody tr td {
-    background-color: #f6fbff !important;
+    background-color: #1f355c !important;   /* dark blue cell */
+    color: #ffffff !important;              /* white text */
+    border-bottom: 1px solid #2c4470 !important;
 }
 
-/* ===== REMOVE ALL HOVER EFFECTS ===== */
+/* ===== BUTTONS (blue tones, no hover) ===== */
+.stButton button {
+    background-color: #1b4de4 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+/* Remove ALL hover effects */
 .stButton button:hover,
-.stButton button:focus,
 .stButton button:active,
+.stButton button:focus,
 .stButton button:visited {
-    background-color: #1b4de4 !important;   /* same as normal */
+    background-color: #1b4de4 !important;
     color: #ffffff !important;
     box-shadow: none !important;
-    transform: none !important;
     opacity: 1 !important;
-    filter: none !important;
+    transform: none !important;
 }
-
-
